@@ -1,0 +1,6 @@
+<%= form_for @artwork do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.cc_license_selector %>
+  <%= f.submit "Create Artwork" %>
+<% end %>

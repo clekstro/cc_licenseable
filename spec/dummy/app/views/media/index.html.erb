@@ -1,0 +1,30 @@
+<h2>CcLicenseable bundles the following media:</h2>
+<p id="logo">
+  <%= cc_logo %>
+</p>
+<h3>Small buttons</h3>
+<div class="small-btn">
+  <% @licenses.each do |license| %>
+    <span><%= image_tag license.small_btn %></span>
+  <% end %>
+</div>
+<h3>Medium buttons</h3>
+<div class="med-btn">
+  <% @licenses.each do |license| %>
+    <span><%= image_tag license.med_btn %></span>
+  <% end %>
+</div>
+<h3>License icons</h3>
+<div class="icons">
+  <% @icons.each do |icon| %>
+    <span><%= cc_icon(icon) %></span>
+  <% end %>
+</div>
+<h3>Icon Chains</h3>
+<div class="icon-chains">
+  A license chain shows the unique components of each Creative Commons license:
+  <% @licenses.each do |license| %>
+    <p><%= license.title %>:</p>
+    <div class="<%= license.abbreviation.downcase %>"><%= cc_icon_chain(license.abbreviation) %></div>
+  <% end %>
+</div>
