@@ -1,4 +1,5 @@
 # cc_licenseable
+[![Code Climate](https://codeclimate.com/github/clekstro/cc_licenseable.png)](https://codeclimate.com/github/clekstro/cc_licenseable)
 
 This gem provides a simple way of associating ActiveRecord model instances with Creative Commons licenses.  Assets, translations and even form helpers are either already available or will be in the future.
 
