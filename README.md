@@ -91,6 +91,7 @@ To include a dropdown of Creative Commons licenses when creating/updating cartoo
 
 ## TODO:
 Full support of all I18n material from http://creativecommons.org/licenses.
+Deploy Dummy app to Heroku
 
 ## Contributing
 
